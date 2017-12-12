@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Recipe Website</title>
+  </head>
+
+  <body>
+    <% @recipes.each do |x| %>
+    <h2 style="display: inline"><%= x.name %></h2>
+    <a href="/recipes/<%= x.id%>">
+      <h3 style="display: inline">Link</h3></a>
+    <% end %>
+  </body>
+
+</html>
